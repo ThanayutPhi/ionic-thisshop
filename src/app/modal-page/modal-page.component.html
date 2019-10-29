@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-buttons class="backbutton" slot="start" (click)="dismiss()">
+    <ion-button>
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-grid>
+
+  <ion-row>
+    <ion-col size="8" size-md>
+      <ion-text size="undefined">
+        <h1 class="title-1">ยินดีต้อนรับเข้าสู่ Thisshop!</h1>
+      </ion-text>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="inputlog">
+    <ion-col size="12" size-md>
+      <ion-item>
+        <ion-input required type="number" placeholder="กรุณากรอกหมายเลขโทรศัพท์มือถือ">+66 | </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input required type="password" placeholder="กรุณากรอกรหัสผ่าน">
+          <ion-icon name="ios-eye"></ion-icon>
+        </ion-input>
+      </ion-item>
+    </ion-col>
+
+    <ion-col size="12" size-md>
+      <ion-text size="small" color="medium">ลืมรหัสผ่าน?</ion-text>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="login">
+    <ion-col size="12" size-md>
+      <ion-button color="primary" expand="block">เข้าสู่ระบบ</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="register">
+    <ion-col size="12" size-md>
+      <ion-text href="#">ลงทะเบียน</ion-text>
+    </ion-col>
+    <ion-col size="12" size-md>
+      <ion-title size="small" color="medium">ลงทะเบียนด้วยวิธีอื่น</ion-title>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="iconsize">
+    <ion-col size="6" size-md class="iconline">
+        <img src="https://img.icons8.com/color/70/000000/line-me.png">
+    </ion-col>
+    <ion-col size="6" size-md class="iconfacebook">
+        <img src="https://img.icons8.com/color/70/000000/facebook.png">
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
