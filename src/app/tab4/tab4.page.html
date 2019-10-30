@@ -1,9 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Tab4</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="icon-1" size="2" size-md>
+          <ion-icon name="qr-scanner"></ion-icon>
+        </ion-col>
+        <ion-col size="8" size-md>
+          <ion-searchbar color="light"></ion-searchbar>
+        </ion-col>
+        <ion-col class="icon-2" size="2" size-md>
+          <ion-icon name="chatboxes"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-button color="secondary" size="default" (click)="presentModal()">Modal</ion-button>
+
+  <ion-slides autoplay="5000" loop="true" speed="3000" pager>
+
+    <ion-slide *ngFor="let slide of slides" text-center>
+
+      <div class="slide-img-padding">
+        <img [src]="slide.img" class="slide-img">
+      </div>
+
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-button color="secondary" size="default" (click)="presentModal()">Modal</ion-button>
+
 </ion-content>
+
+<!-- <ion-content>
+  <ion-slides autoplay="50000" loop="true" speed="30000">
+    <ion-slide *ngFor="let image of imageArray">
+      <img src="{{image.image}}" />
+    </ion-slide>
+  </ion-slides>
+</ion-content> -->
