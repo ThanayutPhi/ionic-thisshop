@@ -10,8 +10,16 @@
   padding-top: 5%;
   text-align: center;
 }
-
-
+.cardsize {
+  height: 270px;
+}
+.imgsize {
+  height: 120px;
+}
+.titlecolor {
+  font-size: x-large;
+  color: orange;
+}
 
 ion-slide {
   display: block;
@@ -22,10 +30,18 @@ img {
 }
 
 .slide-img-padding {
-  padding: 40px;
+  padding: 20px;
 }
 
 ion-slides {
   --bullet-background: #ced1df;
   --bullet-background-active: #8890b2;
+}
+.card-content-ios {
+  padding-left: unset;
+  padding-right: unset;
+  // -webkit-padding-start: 20px;
+  // padding-inline-start: 20px;
+  // -webkit-padding-end: 20px;
+  // padding-inline-end: 20px;
 }

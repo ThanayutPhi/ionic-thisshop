@@ -9,6 +9,12 @@ export class Tab1Page {
 
   constructor() {}
 
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400,
+    autoplay:true
+  };
+
   slides = [
     {
       img: 'http://www.นิคมเครื่องใช้ไฟฟ้า.com/uploads/1517216961946528.jpg',
